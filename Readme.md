@@ -6,7 +6,7 @@ A **Snake Game** built using **HTML**, **CSS**, and **JavaScript** with a respon
 
 Play the game directly in your browser by clicking the link below:
 
-<a href="https://snakegame03.netlify.app" target="_blank"><strong>Play Snake Game</strong></a>
+[**Play Snake Game**](https://snakegame03.netlify.app)
 
 ## Features
 
