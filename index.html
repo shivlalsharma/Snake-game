@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="snake.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="box">
+        <div id="container">
+            <div class="user-game-info">
+                <div id="star-group">
+                    <div class="star" style="font-size: 1.1rem;"><i class="fa-sharp fa-regular fa-star"></i></div>
+                    <div class="star" style="font-size: 1.3rem;"><i class="fa-sharp fa-regular fa-star"></i></div>
+                    <div class="star" style="font-size: 1.5rem;"><i class="fa-sharp fa-regular fa-star"></i></div>
+                    <div class="star" style="font-size: 1.7rem;"><i class="fa-sharp fa-regular fa-star"></i></div>
+                    <div class="star" style="font-size: 1.9rem;"><i class="fa-sharp fa-regular fa-star"></i></div>
+                </div>
+                <div id="userScore" class="score">Score : <span id="scoreValue">0</span></div>
+                <div id="highScore" class="score">High Score : <span id="highScoreValue">0</span></div>
+            </div>
+            <div class="game-speed">
+                <div id="slow" class="speed">Slow</div>
+                <div id="medium" class="speed">Medium</div>
+                <div id="fast" class="speed">Fast</div>
+            </div>
+        </div>
+        <div id="board"></div>
+        <div class="keyboard-buttons">
+            <div class="keys" id="i1"></div>
+            <div class="keys" id="i2" data-value="Up"><i class="fa-sharp fa-solid fa-arrow-up-long" data-value="Up"></i></div>
+            <div class="keys" id="i3"></div>
+            <div class="keys" id="i4" data-value="Left"><i class="fa-sharp fa-solid fa-arrow-left-long" data-value="Left"></i></div>
+            <div class="keys" id="i5" data-value="Play"><i class="fa-sharp fa-solid fa-play" data-value="Play"></i></div>
+            <div class="keys" id="i6" data-value="Right"><i class="fa-sharp fa-solid fa-arrow-right-long" data-value="Right"></i></div>
+            <div class="keys" id="i7"></div>
+            <div class="keys" id="i8" data-value="Down"><i class="fa-sharp fa-solid fa-arrow-down-long" data-value="Down"></i></div>
+            <div class="keys" id="i9"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

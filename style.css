@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0,0.2);
+    z-index: -1;
+}
+
+.box{
+    background-color: rgba(255, 165, 0,0.2);
+    width: 630px;
+    height: 100vh;
+    margin-inline: auto;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+/* user game score and stars */
+.user-game-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.score{
+    color: #fff;
+    background: linear-gradient(to left,red,blue);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+#scoreValue{
+    font-weight: bold;
+    color: #fbff00;
+}
+
+#highScoreValue{
+    font-weight: bold;
+    color: #00ff4c;
+}
+
+#star-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px ;
+    gap: 5px;
+    background: linear-gradient(to right,#5900ff,#c76cff);
+    border: none;
+    outline: none;
+}
+
+.star{
+    color: gold;
+}
+
+/* speed of game */
+.game-speed{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.speed{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,blue,red);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* game board */
+#board{
+    background: linear-gradient(to top, #373838,#014034);
+    width: 610px;
+    height: 550px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+
+/* snake head */
+.head{
+    background-color: #00d34d;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* snake body */
+.snake-body{
+    background: linear-gradient(orange,chocolate);
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+/* snake food */
+.food{
+    background-color: #ff0000;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 10px;
+}
+
+/* key buttons for mobile */
+.keyboard-buttons{
+    display: none;
+}
+
+#i1,#i3,#i9,#i7{
+    border: none;
+}
+
+#i2,#i8{
+    background-color: #595959;
+    padding: 20px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#i4,#i6{
+    background-color: #595959;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#i5{
+    background-color: #595959;
+    color: #fff;
+    margin: 2px;
+    cursor: pointer;
+}
+
+/* responsive design */
+@media (max-width:1000px){
+    .box{
+        width: 520px;
+    }
+    #board{
+        width: 500px;
+        height: 370px;
+    }
+    /* buttons in mobile */
+    .keyboard-buttons{
+        width: 300px;
+        margin-block: 10px;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .keys{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media(max-width:520px){
+    .box{
+        width: 100%;
+    }
+    #board{
+        width: 95%;
+    }
+}
+
+@media (max-width:430px){
+    .box{
+        width: 100%;
+    }
+    #board{
+        width: 95%;
+    }
+}
