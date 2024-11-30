@@ -53,18 +53,26 @@ Play the game directly in your browser by clicking the link below:
 
 ## Installation
 
-To run the Snake Game locally:
+Follow these steps to run the Snake Game locally:
 
-1. Clone the repository:
+1. **Clone the repository**:
     ```bash
     git clone https://github.com/shivlalsharma/snake-game.git
     cd snake-game
     ```
 
-2. Open the `index.html` file in your browser.
+2. **Open the `index.html` file in your browser**.
 
    Alternatively, you can set up a local server (e.g., using **VS Code Live Server**) to view the game in your browser.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Author
+
+Created and deployed by **Shivlal Sharma**.  
+- **GitHub**: [Shivlal Sharma's GitHub](https://github.com/shivlalsharma)
+- **LinkedIn**: [Shivlal Sharma's LinkedIn](https://www.linkedin.com/in/shivlal-sharma-56ba5a284/)
